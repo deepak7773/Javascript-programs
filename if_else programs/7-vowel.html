@@ -1,0 +1,37 @@
+<script>
+    // const char = prompt("Enter your Character")
+
+    // if (char = [a, e, i, o, u]) {
+    //     document.write("your character is vowel")
+    // }
+    // else {
+    //     document.write("your character is not vowel")
+    // }
+
+    // var ch = prompt("enter your character")
+    // if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+    //     document.write("<b>" + ch + "</b>" + " is a Vowel");
+    // else if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+    //     document.write("<b>" + ch + "</b>" + " is a Vowel");
+    // else
+    //     document.write("<b>" + ch + "</b>" + " is a Consonant");
+
+    function isVowel(char) {
+        if (char.length == 1) {
+            var vowels = new Array("a", "e", "i", "o", "u");
+            var isVowel = false;
+
+            for (e in vowels) {
+                if (vowels[e] == char) {
+                    isVowel = true;
+                }
+            }
+
+            return isVowel;
+        }
+    }
+
+    document.write(isVowel("u"));
+
+
+</script>
