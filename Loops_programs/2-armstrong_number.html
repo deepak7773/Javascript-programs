@@ -1,0 +1,54 @@
+<script>
+
+
+    //using while loop
+
+    /*
+
+    let number;
+    number = prompt("Enter a number !"); // taking a number as an input, we will check whether this number is Armstrong or not?
+
+    let n = number.length; // The number of digits in the 'number' will be stored in the variable 'n'
+
+    let sum = 0; // we will store the sum of 'nth power of all the digits in the 'sum' variable
+
+    let i = 0;
+
+    while (i < n) {
+        let digit = number[i] - '0'; // extracting the i’th digit of 'number'
+        sum = (sum + Math.pow(digit, n)); // adding the nth power of the digit to the variable 'sum'
+        i++; // incrementing the index variable of the string
+    }
+
+    if (sum == number) // if sum is same as number, then it is an armstrong number
+    {
+        console.log(number, "is an Armstrong Number");
+    }
+    else {
+        console.log(number, "is not an Armstrong Number");
+    }
+   */
+
+    // using for loop
+
+    let number;
+    number = prompt("Enter a number !"); // taking a number as an input, we will check whether this number is Armstrong or not?
+
+    let n = number.length; // The number of digits in the 'number' will be stored in the variable 'n'
+
+    let sum = 0; // we will store sum of nth power of all the digits in the 'sum' variable
+
+    for (let i = 0; i < n; i++) {
+        let digit = number[i] - '0'; // extracting the i’th digit of 'number'
+        sum = (sum + Math.pow(digit, n)); // adding the nth power of the digit to the variable 'sum'
+    }
+
+    if (sum == number) // if sum is same as number, then it is an armstrong number
+    {
+        document.write(number, "is an Armstrong Number");
+    }
+    else {
+        document.write(number, "is not an Armstrong Number");
+    }
+
+</script>
